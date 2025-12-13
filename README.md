@@ -1,2 +1,2 @@
-# simple-webpage
+# HTML
 my first webpage using html.
