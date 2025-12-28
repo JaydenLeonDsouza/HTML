@@ -14,12 +14,12 @@
             color: white;
         }
         h1 {
-            color: #2B8A0F;
+            color: #35C20C;
             font-size: 3.5rem;
             font-weight: 800;
             margin-top: 90px;
             margin-bottom: 16px;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
 
         p {
@@ -29,18 +29,59 @@
             line-height: 1.7;
             opacity: 0.95;
         }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 260px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 16px;
+            text-decoration: none;
+            color: white;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card span {
+            display: block;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
     </style>
 </head>
 <body>
     <h1>Plants & Pets for Tired People</h1>
     <p>For those who love to admire nature but fear the work.</p>
+    <div class="card-container">
+
+        <a href="plants.html" class="card">
+            <img src="images/plants.jpg" alt="Plants">
+            <span>Plants</span>
+        </a>
+
+        <a href="pets.html" class="card">
+            <img src="images/pets.jpg" alt="Pets">
+            <span>Pets</span>
+        </a>
+        
+    </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
