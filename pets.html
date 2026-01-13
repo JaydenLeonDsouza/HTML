@@ -29,7 +29,22 @@
         ul {
             line-height: 1.8;
         }
-        
+
+        .info-cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 800px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 20px;
+            border-radius: 14px;
+            flex: 1;
+            min-width: 220px;
+        }
+
     </style>
 </head>
 <body>
@@ -55,7 +70,18 @@
     </ul>
 </section>
 
-<a href="index.html">← Back to home</a>
+<div class="info-cards">
+    <div class="info-card">
+        <h3>Low daily effort</h3>
+        <p>Once established, care is minimal and predictable.</p>
+    </div>
 
+    <div class="info-card">
+        <h3>Calming to watch</h3>
+        <p>Movement without noise or demand.</p>
+    </div>
+</div>
+
+<a href="index.html">← Back to home</a>
 </body>
 </html>
